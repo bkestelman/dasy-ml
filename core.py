@@ -18,13 +18,15 @@ class DataSynthesizer:
         return process(size=(n, dim))
 
 class DataGenerator:
+    """
+    Same as DataSynthesizer but sample() returns a generator instead of all the data at once.
+    """
     def __init__(self):
         pass
 
     def sample(self, n=100, dim=2, process=np.random.normal):
-        if generator:
-            for i in range(n):
-                yield process()
+        for i in range(n):
+            yield process(size=dim)
 
 class Labeler:
     pass
