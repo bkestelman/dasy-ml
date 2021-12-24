@@ -12,6 +12,9 @@ Why is this useful for machine learning research compared to using existing data
 
 Note: this is not a library for adding synthetic data to an existing dataset - there are already many other libraries that do this. 
 
+## Examples
+<img src="https://i.ibb.co/Tms53YW/gaussian-centroid-label.png" alt="Gaussian Data with Centroid Labels" width="500px">
+
 ## DataSynthesizers and Labelers 
 The core of synthetic-data are DataSynthesizers and Labelers. 
 
