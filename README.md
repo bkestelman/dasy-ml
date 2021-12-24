@@ -10,9 +10,16 @@ Why is this useful for machine learning research compared to using existing data
 - You may want to test against many different types of data. 
 - You may want to arbitrarily adjust the size of the dataset. 
 
-This library focuses on supervised learning settings, although it may also be used for unsupervised settings just by ignoring the labels.
-
 Note: this is not a library for adding synthetic data to an existing dataset - there are already many other libraries that do this. 
+
+## DataGenerators and Labelers 
+The core of synthetic-data are DataGenerators and Labelers. 
+
+DataGenerators sample inputs X from the feature-space. 
+
+Labelers take inputs X and assign labels y to them. 
+
+These are very general classes. The procedure for creating X typically involves sampling from some probability distribution. Assigning labels may be a deterministic or probabilistic function. Each x or y may be created independently but does not have to be, for example if created through a Markov process.
 
 ## Data for Classification Problems
 
