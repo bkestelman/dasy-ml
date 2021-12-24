@@ -21,17 +21,19 @@ Labelers take inputs X and assign labels y to them.
 
 These are very general classes. The procedure for creating X typically involves sampling from some probability distribution. Assigning labels may be a deterministic or probabilistic function. Each x or y may be created independently but does not have to be, for example if created through a Markov process.
 
-## Data for Classification Problems
+## Discussion of Kinds of Data
 
-### Deterministic vs. Probabilistic Labels
+### Data for Classification Problems
+
+#### Deterministic vs. Probabilistic Labels
 If for any given input x, the label must always be a specific value, then the labels are deterministic. In other words, the label y=f(x), where f is a pure function. Typically, y is encoded as a one-hot vector. 
 
 On the other hand, if a given input x may be assigned different labels, then labels are probabilistic. Here, y is drawn from the possible classes according to some probability distribution p(x), representing the probability of each class for the given input. 
 
 Theoretically, it is possible to achieve 100% accuracy on a deterministic classification problem. This is impossible in a probabilistic classification problem. 
 
-### Noisy Labels
+#### Noisy Labels
 
-### Linearly Separable
+#### Linearly Separable
 
-## Data for Regression Problems
+### Data for Regression Problems
