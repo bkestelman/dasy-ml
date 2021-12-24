@@ -23,6 +23,10 @@ These are very general classes. The procedure for creating X typically involves 
 
 ## Discussion of Kinds of Data
 
+### Independent vs. Non-Independent Data
+
+### Time-Series Data
+
 ### Data for Classification Problems
 
 #### Deterministic vs. Probabilistic Labels
@@ -34,6 +38,8 @@ Theoretically, it is possible to achieve 100% accuracy on a deterministic classi
 
 #### Noisy Labels
 
-#### Linearly Separable
+#### Linearly Separable Data
 
 ### Data for Regression Problems
+
+
