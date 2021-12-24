@@ -1,16 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from core import DataSynthesizer, DataGenerator, Labeler
+from synthesizers.gaussian import GaussianSynth
 
 def main():
-    synth = DataSynthesizer()
+    synth = GaussianSynth()
     data = synth.sample(n=100, dim=2)
     plt.scatter(data.T[0], data.T[1])
-    plt.show()
-
-    synth = DataGenerator()
-    data = synth.sample(n=100, dim=2)
-    plt.scatter(*zip(*data))
     plt.show()
 
 if __name__ == '__main__':
