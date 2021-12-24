@@ -12,10 +12,10 @@ Why is this useful for machine learning research compared to using existing data
 
 Note: this is not a library for adding synthetic data to an existing dataset - there are already many other libraries that do this. 
 
-## DataGenerators and Labelers 
-The core of synthetic-data are DataGenerators and Labelers. 
+## DataSynthesizers and Labelers 
+The core of synthetic-data are DataSynthesizers and Labelers. 
 
-DataGenerators sample inputs X from the feature-space. 
+DataSynthesizers sample inputs X from the feature-space. 
 
 Labelers take inputs X and assign labels y to them. 
 
