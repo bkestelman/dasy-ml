@@ -13,7 +13,7 @@ Why is this useful for machine learning research compared to using existing data
 Note: this is not a library for adding synthetic data to an existing dataset - there are already many other libraries that do this. 
 
 ## Examples
-<img src="https://i.ibb.co/dDh7XgH/gaussian-centroids-subplots.png" alt="Gaussian Data with Centroid Labels" height="500px">
+<img src="https://i.ibb.co/pQRC3g1/gaussian-centroids-subplots-cropped.png" alt="Gaussian Data with Centroid Labels" height="500px">
 
 Above, the input X data is simply sampled from a Gaussian centered at the origin. Then, the data is labeled by creating random centroids and labeling each point according to its nearest centroid (similar to the first step in k-means). On the left, with only 2 classes, the classes are linearly separable. With 3 or more classes, they are no longer linearly separable. 
 
