@@ -15,7 +15,7 @@ Note: this is not a library for adding synthetic data to an existing dataset - t
 ## Examples
 ![](https://i.ibb.co/VY2Q2d9/gaussian-centroids-subplots.png)
 
-Above, the input X data is simply sampled from a Gaussian centered at the origin. Then, the data is labeled by creating random centroids and labeling each point according to its nearest centroid (similar to the first step in k-means). On the left with only 2 classes, the classes are linearly separable. With 3 or more classes, they are no longer linearly separable. 
+Above, the input X data is simply sampled from a Gaussian centered at the origin. Then, the data is labeled by creating random centroids and labeling each point according to its nearest centroid (similar to the first step in k-means). On the left with only 2 classes, the classes are linearly separable. With 3 or more classes, they are no longer linearly separable and the boundaries essentially form a Voronoi diagram. 
 
 ## DataSynthesizers and Labelers 
 The core of synthetic-data are DataSynthesizers and Labelers. 
