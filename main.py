@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from synthesizers.gaussian import GaussianSynth
-from labelers.centroids import CentroidsLabeler
+from dasy.synthesizers.gaussian import GaussianSynth
+from dasy.labelers.centroids import CentroidsLabeler
 
 def main():
     dim = 2

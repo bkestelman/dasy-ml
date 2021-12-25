@@ -1,5 +1,5 @@
 import numpy as np
-from core import Labeler
+from dasy.core import Labeler
 
 class CentroidsLabeler(Labeler):
     """

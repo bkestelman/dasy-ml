@@ -1,5 +1,5 @@
 import numpy as np
-from core import DataSynthesizer
+from dasy.core import DataSynthesizer
 
 #TODO: switch from numpy random to Generator
 
