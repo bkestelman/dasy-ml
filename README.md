@@ -8,6 +8,13 @@ pip install dasy-ml
 ```
 import dasy
 ```
+### Developers
+```
+git clone https://github.com/bkestelman/dasy-ml
+cd dasy-ml
+pip install -e .
+python dasy/main.py # should show a plot with example data
+```
 
 ## Introduction
 When researching machine learning algorithms, we often want to know how they behave on data with specific properties. For example: linearly separable, correlated, isotropic, etc. This library aims to provide functionality to construct synthetic datasets with any desired statistical properties, so researchers can easily study how algorithms respond to different types of data. 
