@@ -1,6 +1,14 @@
 # dasy-ml
 DaSy DataSynthesizer - Create synthetic data with desired statistical properties for machine learning research.
 
+## Install
+```
+pip install dasy-ml
+```
+```
+import dasy
+```
+
 ## Introduction
 When researching machine learning algorithms, we often want to know how they behave on data with specific properties. For example: linearly separable, correlated, isotropic, etc. This library aims to provide functionality to construct synthetic datasets with any desired statistical properties, so researchers can easily study how algorithms respond to different types of data. 
 
