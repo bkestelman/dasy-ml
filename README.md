@@ -39,7 +39,9 @@ DataSynthesizers sample inputs X from the feature-space.
 
 Labelers take inputs X and assign labels y to them. 
 
-These are very general classes. The procedure for creating X typically involves sampling from some probability distribution. Assigning labels may be a deterministic or probabilistic function. Each x or y may be created independently but does not have to be, for example if created through a Markov process.
+These are very general classes. The procedure for creating X typically involves sampling from some probability distribution. Assigning labels may be a deterministic or probabilistic function. Each x or y may be sampled independently or it may not be, for example if created by a Markov process.
+
+A DataSynthesizer may also assign labels directly to its own data if you want to couple the label distribution with the input distribution. 
 
 ## Discussion of Kinds of Data
 
