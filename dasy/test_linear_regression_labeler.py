@@ -11,6 +11,8 @@ def main():
     y = labeler.assign(X)
 
     plt.scatter(X, y)
+    plt.axline((0, labeler.b), slope=labeler.w, color='r')
+    plt.title('Uniform Data x with Linear y + noise')
     plt.show()
 
 if __name__ == '__main__':
