@@ -20,7 +20,7 @@ class Labeler:
     """
     Assigns labels y to input X data. 
     """
-    def __init__(self, classes):
+    def __init__(self, classes=0):
         self.classes = classes
 
     def assign(self, X):
