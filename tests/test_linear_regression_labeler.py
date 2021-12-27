@@ -4,7 +4,7 @@ from dasy.synthesizers.uniform import UniformSynth
 from dasy.labelers.regression.linear import LinearRegressionLabeler
 
 class TestRegressionLabelers(unittest.TestCase):
-    def test_linear_labeler():
+    def test_linear_labeler(self):
         dim = 1
         n = 50
         synth = UniformSynth()
