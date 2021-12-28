@@ -7,13 +7,11 @@ DaSy DataSynthesizer - Create synthetic data with desired statistical properties
 pip install dasy-ml
 ```
 ### Simple Usage
-```python3
-import numpy as np
-import matplotlib.pyplot as plt
-```
 
 #### dasy for Classification
 ```python3
+import numpy as np
+import matplotlib.pyplot as plt
 from dasy.synthesizers.gaussian import GaussianSynth
 from dasy.labelers.classification.centroids import CentroidsLabeler
 plt.clf()
