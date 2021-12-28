@@ -21,6 +21,7 @@ class TestSynthesizers(unittest.TestCase):
 
         plt.scatter(data.T[0], data.T[1])
         plt.title('Uniform Data')
+        plt.tight_layout()
         plt.savefig('uniform_data')
 
     def test_gaussian_synth(self):
@@ -33,5 +34,6 @@ class TestSynthesizers(unittest.TestCase):
 
         plt.scatter(data.T[0], data.T[1])
         plt.title('Gaussian Data')
+        plt.tight_layout()
         plt.savefig('gaussian_data')
 

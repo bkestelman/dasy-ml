@@ -18,5 +18,6 @@ class TestRegressionLabelers(unittest.TestCase):
         plt.scatter(X.T[0], y)
         plt.axline((0, labeler.b), slope=labeler.w, color='r')
         plt.title('Uniform Data x with Linear y + noise')
+        plt.tight_layout()
         plt.savefig('linear_labeler')
 
