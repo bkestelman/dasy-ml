@@ -8,6 +8,7 @@ from dasy.plotting_utils import plot_bisectors
 class TestClassificationLabelers(unittest.TestCase):
     def test_centroids_labeler(self):
         dim = 2
+        plt.clf()
         #plt.gca().set_aspect('equal', adjustable='box')
         #fig, ax = plt.subplots()
         f, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
