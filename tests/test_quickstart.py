@@ -23,8 +23,8 @@ class TestQuickstart(unittest.TestCase):
 # 4. Plot
         plt.scatter(X.T[0], X.T[1], c=y)
         plt.title('Synthetic Classification Problem')
-        plt.savefig('synthetic_classification')
         plt.tight_layout()
+        plt.savefig('synthetic_classification')
         plt.clf()
 
 ### dasy for regression
