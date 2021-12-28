@@ -20,8 +20,8 @@ class TestClassificationLabelers(unittest.TestCase):
         ax2.set_xlim(-2, 2)
         ax2.set_ylim(-2, 2)
 
-        synth = GaussianSynth()
-        data = synth.sample(n=100, dim=dim)
+        synth = GaussianSynth(dim=dim)
+        data = synth.sample(n=100)
         #plt.scatter(data.T[0], data.T[1])
         #plt.show()
 

@@ -15,8 +15,8 @@ class TestQuickstart(unittest.TestCase):
         classes = 2 # number of classes
         n = 100 # number of data points
 # 2. Create synthetic input data X
-        synth = GaussianSynth() 
-        X = synth.sample(n=n, dim=dim) # sample n dim-dimensional data points from Gaussian
+        synth = GaussianSynth(dim=dim) 
+        X = synth.sample(n=n) # sample n dim-dimensional data points from Gaussian
 # 3. Assign labels y
         labeler = CentroidsLabeler(classes=classes, dim=dim) # for 2 classes, this creates linearly separable labels
         y = labeler.assign(X)
@@ -32,8 +32,8 @@ class TestQuickstart(unittest.TestCase):
         dim = 1 # dimension of each input
         n = 50 # number of data points
 # 2. Create synthetic input data X
-        synth = UniformSynth() 
-        X = synth.sample(n=n, dim=dim) # sample n dim-dimensional data points from Uniform distribution
+        synth = UniformSynth(dim=dim) 
+        X = synth.sample(n=n) # sample n dim-dimensional data points from Uniform distribution
 # 3. Assign continuous targets y
         labeler = LinearRegressionLabeler(dim=dim)
         y = labeler.assign(X)

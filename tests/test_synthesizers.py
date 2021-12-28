@@ -10,10 +10,10 @@ class TestSynthesizers(unittest.TestCase):
         dim = 2
         n = 50
 
-        synth = UniformSynth()
         low = -.5
         high = .5 
-        data = synth.sample(n=n, dim=dim, low=low, high=high)
+        synth = UniformSynth(dim=dim, low=low, high=high)
+        data = synth.sample(n=n)
         # test boundaries
         for x in data:
             self.assertTrue(np.all(x < high))
@@ -29,8 +29,8 @@ class TestSynthesizers(unittest.TestCase):
         dim = 2
         n = 100
 
-        synth = GaussianSynth()
-        data = synth.sample(n=n, dim=dim)
+        synth = GaussianSynth(dim=dim)
+        data = synth.sample(n=n)
 
         plt.scatter(data.T[0], data.T[1])
         plt.title('Gaussian Data')

@@ -7,9 +7,9 @@ class TestRegressionLabelers(unittest.TestCase):
     def test_linear_labeler(self):
         dim = 1
         n = 50
-        synth = UniformSynth()
+        synth = UniformSynth(dim=dim)
         labeler = LinearRegressionLabeler(dim=dim)
-        X = synth.sample(n=n, dim=dim)
+        X = synth.sample(n=n)
         y = labeler.assign(X)
         #print(X.shape)
         #print(y.shape)

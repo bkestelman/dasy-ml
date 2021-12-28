@@ -4,14 +4,16 @@ class DataSynthesizer:
     """
     Samples input X data according to a specified process.
     """
-    def __init__(self):
-        pass
+    def __init__(self, dim):
+        """
+        @param dim: Dimension of data
+        """
+        self.dim = dim
 
-    def sample(self, n=100, dim=2):
+    def sample(self, n=100):
         """
         Returns a sample of synthetic data. 
         @param n: Number of data points to sample
-        @param dim: Dimension of data
         @return data X
         """
         raise NotImplementedError
@@ -30,3 +32,4 @@ class Labeler:
         """
         raise NotImplementedError
 
+#TODO: should we have separate classes for RegressionLabeler and ClassificationLabeler? (current hack is use classes=0 for RegressionLabeler)
