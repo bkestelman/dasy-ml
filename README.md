@@ -29,7 +29,7 @@ y = labeler.assign(X)
 plt.scatter(X.T[0], X.T[1], c=y)
 plt.title('Synthetic Classification Problem')
 plt.tight_layout()
-plt.savefig('synthetic_classification')
+plt.show()
 ```
 
 #### dasy for Regression
@@ -52,7 +52,7 @@ plt.scatter(X.T[0], y)
 plt.axline((0, labeler.b), slope=labeler.w, color='r') # plot the underlying line which generated the targets
 plt.title('Synthetic Regression Problem')
 plt.tight_layout()
-plt.savefig('synthetic_regression')
+plt.show()
 ```
 
 ### Developers
