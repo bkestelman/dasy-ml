@@ -2,7 +2,6 @@
 DaSy DataSynthesizer - Create synthetic data with desired statistical properties for machine learning research.
 
 ## Quick-Start
-### Install
 ```
 pip install dasy-ml
 ```
