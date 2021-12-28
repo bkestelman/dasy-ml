@@ -63,7 +63,7 @@ plt.savefig('synthetic_regression')
 git clone https://github.com/bkestelman/dasy-ml
 cd dasy-ml
 pip install -e .
-python dasy/main.py # should show a plot with example data
+python -m unittest
 ```
 
 ## Introduction
