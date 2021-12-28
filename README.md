@@ -10,12 +10,15 @@ pip install dasy-ml
 ```python3
 import numpy as np
 import matplotlib.pyplot as plt
-from dasy.synthesizers.gaussian import GaussianSynth
-from dasy.synthesizers.uniform import UniformSynth
-from dasy.labelers.classification.centroids import CentroidsLabeler
-from dasy.labelers.regression.linear import LinearRegressionLabeler
+```
 
-### dasy for classification
+#### dasy for Classification
+```python3
+from dasy.synthesizers.gaussian import GaussianSynth
+from dasy.labelers.classification.centroids import CentroidsLabeler
+plt.clf()
+
+# 1. Define the problem
 dim = 2 # dimension of each input
 classes = 2 # number of classes
 n = 100 # number of data points
@@ -28,11 +31,16 @@ y = labeler.assign(X)
 # 4. Plot
 plt.scatter(X.T[0], X.T[1], c=y)
 plt.title('Synthetic Classification Problem')
-plt.savefig('synthetic_classification')
 plt.tight_layout()
+plt.savefig('synthetic_classification')
+```
+
+#### dasy for Regression
+```python3
+from dasy.synthesizers.uniform import UniformSynth
+from dasy.labelers.regression.linear import LinearRegressionLabeler
 plt.clf()
 
-### dasy for regression
 # 1. Define the problem
 dim = 1 # dimension of each input
 n = 50 # number of data points
